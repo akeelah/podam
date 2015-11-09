@@ -1,11 +1,4 @@
-## Customize the test machine
-machine:
-
-  timezone:
-    Africa/Lagos # Set the timezone
-
-  # Version of java to use
-  java:
-    version: openjdk7
-
-
+test:
+  post:
+    - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+    - find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
