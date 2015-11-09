@@ -1,3 +1,6 @@
+database:
+  override:
+    - mysql -u ubuntu circle_test < my-database-setup.sql
 test:
   post:
     - mkdir -p $CIRCLE_TEST_REPORTS/junit/
