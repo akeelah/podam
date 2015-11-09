@@ -1,2 +1,11 @@
-general:
-  build_dir: src/test
+## Customize the test machine
+machine:
+
+  timezone:
+    Africa/Lagos # Set the timezone
+
+  # Version of java to use
+  java:
+    version: openjdk7
+
+
