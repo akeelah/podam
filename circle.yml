@@ -1,3 +1,1 @@
-test:
-  post:
-    - junit src/test
+
